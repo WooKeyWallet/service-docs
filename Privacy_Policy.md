@@ -1,3 +1,5 @@
+# Privacy Policy
+
 Please read through our Privacy Policy carefully.
 
 Last Updated: 2019/03/01
