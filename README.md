@@ -1,6 +1,5 @@
-# wookey-wallet-service-docs
 
-### Road map
+## Road map
 
 #### We will support the following currencies
 - [x] Monero
