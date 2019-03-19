@@ -1,7 +1,7 @@
 ## Privacy Policy
 
 Please read through our Privacy Policy carefully.
- 
+
 Last Updated: 2019/03/01
 
 ### **1. Introduction**
@@ -12,7 +12,7 @@ We may change this Privacy Policy from time to time. If we make changes, we will
 
 ### **2. Collection of Information**
 
-**Information You Provide to Us - **We collect information you provide directly to us and WE DO NOT EVER STORE ANY OF THEM. For example, we collect information when you create an account, participate in any interactive features of the Services, fill out a form, complete a cryptocurrency transaction via the Services, request customer support or otherwise communicate with us. The types of information we may collect and NOT STORE include your cryptocurrency address, password, mobile PIN code and any other information you choose to provide.
+**Information You Provide to Us** - We collect information you provide directly to us and WE DO NOT EVER STORE ANY OF THEM. For example, we collect information when you create an account, participate in any interactive features of the Services, fill out a form, complete a cryptocurrency transaction via the Services, request customer support or otherwise communicate with us. The types of information we may collect and NOT STORE include your cryptocurrency address, password, mobile PIN code and any other information you choose to provide.
 
 ### **3. Use of Information**
 
@@ -37,10 +37,10 @@ We take reasonable measures to help protect information about you from loss, the
 
 ### **6. Your Choices**
 
-**Account Information - **You may update, correct or delete information about you or your account at any time by logging into your account.
- 
-**Push Notifications - **As and when this functionality becomes available, and only with your consent, we may send standard push notifications or alerts to your mobile device. You can deactivate these messages at any time by changing the notification settings on your mobile device.
+**Account Information** - You may update, correct or delete information about you or your account at any time by logging into your account.
 
-###  **7. Contact Us**
+**Push Notifications** - As and when this functionality becomes available, and only with your consent, we may send standard push notifications or alerts to your mobile device. You can deactivate these messages at any time by changing the notification settings on your mobile device.
+
+### **7. Contact Us**
 
 If you have any questions about this Privacy Policy, please contact us at info@wookey.io
