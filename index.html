@@ -103,8 +103,8 @@
     }
 
     var timestamp = (new Date()).getTime();
-    reqMarkdown('https://raw.githubusercontent.com/WookeyWallet/wookey-wallet-service-docs/master/Terms_of_Service.md?_t=' + timestamp, function(termsOfService, err) {
-      reqMarkdown('https://raw.githubusercontent.com/WookeyWallet/wookey-wallet-service-docs/master/Privacy_Policy.md?_t=' + timestamp, function(privacyPolicy, err) {
+    reqMarkdown('./Terms_of_Service.md?_t=' + timestamp, function(termsOfService, err) {
+      reqMarkdown('./Privacy_Policy.md?_t=' + timestamp, function(privacyPolicy, err) {
         document.getElementById('content').innerHTML = marked(termsOfService + privacyPolicy);
       });
     });
