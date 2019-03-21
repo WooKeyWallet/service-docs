@@ -1,4 +1,4 @@
-# service-docs
+# WooKey Wallet service docs
 
 ## Road map
 
