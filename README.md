@@ -38,6 +38,10 @@ We will support the following currencies:
 - [ ] Zcash
 - [ ] Horizen
 
+## Thanks
+
+Thanks to [evilcos](https://github.com/evilcos) and Bakhtiyor K. for helping us during the development process.
+
 ## Donating
 
 Donation Address (XMR): `4Fkrv8JZhhzftCWparEwqv8rnbys5tAXx2JoiZukyQhmXGWWxjbzaRe9MWEzYTrbeocj4abzKfA6GWWt8AkVY1fkcjqVXRUQhkaGLsPjsr`
