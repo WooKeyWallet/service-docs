@@ -113,12 +113,15 @@
     let urlParam = '_en_US';
 
     if (window.location.search) {
-      let langParam = window.location.search.split('=')[1]
+      let langParam = ''
       if (window.location.search.split('=')[1] === 'zh-CN' || window.location.search.split('=')[1] === 'zh_CN') {
         langParam = 'zh_CN'
+        document.title = '隐私政策'
       } else {
         langParam = 'en_US'
+        document.title = 'Privacy Policy';
       }
+      
       urlParam = `_${langParam}`
     }
 

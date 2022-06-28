@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui"/>
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="renderer" content="webkit" />
 
@@ -18,37 +20,44 @@
   <title>Terms of Service & Privacy Policy</title>
 
   <style>
-    *, ::after, ::before {
+    *,
+    ::after,
+    ::before {
       -webkit-box-sizing: border-box;
-              box-sizing: border-box;
+      box-sizing: border-box;
     }
-    body, html {
+
+    body,
+    html {
       min-width: 100vw;
       min-height: 100vh;
       padding: 0;
       margin: 0;
     }
+
     .content {
       min-height: 100vh;
-      word-break : normal;
+      word-break: normal;
       word-wrap: break-word;
       overflow: hidden;
       padding: 6vw;
     }
+
     .loading {
       min-height: 88vh;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
     }
   </style>
 </head>
+
 <body>
   <div class="content" id="content">
     <div class="loading"><span>Loading...</span></div>
@@ -58,16 +67,16 @@
     function createXMLHttpObject() {
       var xmlhttp = false;
       var XMLHttpFactories = [
-        function() {
+        function () {
           return new XMLHttpRequest();
         },
-        function() {
+        function () {
           return new window.ActiveXObject('Msxml2.XMLHTTP');
         },
-        function() {
+        function () {
           return new window.ActiveXObject('Msxml3.XMLHTTP');
         },
-        function() {
+        function () {
           return new window.ActiveXObject('Microsoft.XMLHTTP');
         }
       ];
@@ -93,7 +102,7 @@
       xhr.open('GET', url, true);
       xhr.responseType = 'text';
 
-      xhr.onreadystatechange = function() {
+      xhr.onreadystatechange = function () {
         if ((xhr.readyState === 4) && (xhr.status === 200)) {
           return cb && cb(xhr.responseText);
         }
@@ -103,11 +112,10 @@
     }
 
     var timestamp = (new Date()).getTime();
-    reqMarkdown('./Terms_of_Service.md?_t=' + timestamp, function(termsOfService, err) {
-      reqMarkdown('./Privacy_Policy.md?_t=' + timestamp, function(privacyPolicy, err) {
-        document.getElementById('content').innerHTML = marked.parse(termsOfService + privacyPolicy);
-      });
+    reqMarkdown('./Terms_of_Service.md?_t=' + timestamp, function (termsOfService, err) {
+      document.getElementById('content').innerHTML = marked.parse(termsOfService);
     });
   </script>
 </body>
+
 </html>
