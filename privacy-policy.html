@@ -110,11 +110,20 @@
 
       xhr.send(null);
     }
+    let urlParam = '_en_US';
 
-    const urlParam = window.location.search.split('=')
+    if (window.location.search) {
+      let langParam = window.location.search.split('=')[1]
+      if (window.location.search.split('=')[1] === 'zh-CN' || window.location.search.split('=')[1] === 'zh_CN') {
+        langParam = 'zh_CN'
+      } else {
+        langParam = 'en_US'
+      }
+      urlParam = `_${langParam}`
+    }
 
     var timestamp = (new Date()).getTime();
-    reqMarkdown(`./Privacy_Policy_${urlParam[1]}.md?_t=` + timestamp, function (privacyPolicy, err) {
+    reqMarkdown(`./Privacy_Policy${urlParam}.md?_t=` + timestamp, function (privacyPolicy, err) {
       document.getElementById('content').innerHTML = marked.parse(privacyPolicy);
     });
   </script>
