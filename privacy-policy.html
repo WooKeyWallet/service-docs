@@ -104,7 +104,7 @@
 
     var timestamp = (new Date()).getTime();
     reqMarkdown('./Privacy_Policy.md?_t=' + timestamp, function(privacyPolicy, err) {
-      document.getElementById('content').innerHTML = marked(privacyPolicy);
+      document.getElementById('content').innerHTML = marked.parse(privacyPolicy);
     });
   </script>
 </body>
